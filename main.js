@@ -31,9 +31,13 @@ function tick () {
     if (secs < 10) { secs = "0" + secs; }
 
     // Create Time String
-    let time = `${days} : ${hours} : ${mins} : ${secs}`;
+    //let time = `${days} : ${hours} : ${mins} : ${secs}`;
 
     // Set time on document
-    document.querySelector('.countdown').innerText = time;
+    //document.querySelector('.countdown').innerText = time;
+    document.querySelector('#days').innerText = days;
+    document.querySelector('#hours').innerText = hours;
+    document.querySelector('#minutes').innerText = mins;
+    document.querySelector('#seconds').innerText = secs;
   }
 }
