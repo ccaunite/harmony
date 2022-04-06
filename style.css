@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    background-image: url("https://ccaunite.github.io/harmony/assests/space.jpg");
+    background-image: url("assests/space.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
