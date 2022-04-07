@@ -3,61 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-    <link rel="icon" href="assests/logo-vanilla.png">
+    <link rel="stylesheet" href="index-style.css">
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <script src="code.js"></script>
     <title>CCA UNITE</title>
 </head>
 <body>
-    <header>
-        <div class="hero">
-            <h3>2022 Unite Conference Countdown</h3>
-            <div class="countdown">
-                <div class="digitColumn">
-                    <h1 class="digits" id="days">00</h1> 
-                    <h4 class="label">DAYS</h4>
+    <div class="hero">
+        <div id="hamburger-container">
+            <button id="nav-hamburger" onclick="navDisplay()"><i class="ai-tdree-line-horizontal"></i></button>
+        </div>
+        <nav id="nav">
+            <div class="nav-links">
+                <div class="nav-links-left">
+                    <a href="index.html" class="home">CCA UNITE</a>
                 </div>
-                <div class="digitColumn">
-                    <h1 class="digits" id="hours">00</h1> 
-                    <h4 class="label">HOURS</h4>
-                </div>
-                <div class="digitColumn">
-                    <h1 class="digits" id="minutes">00</h1>
-                    <h4 class="label">MINUTES</h4>
-                </div>
-                <div class="digitColumn">
-                    <h1 class="digits" id="seconds">00</h1> 
-                    <h4 class="label">SECONDS</h4>
+                <div class="nav-links-right">
+                    <a onclick="navDisplay()" href="#about">About</a>
+                    <a onclick="navDisplay()" href="#event">2022 Event</a>
+                    <a onclick="navDisplay()" href="archive.html">Past Events</a>
                 </div>
             </div>
-            <h2>Our Website is Launching Soon.</h1>
-            <h3>We are CCA Unite, a TedX-inspired program created and run by students from Canyon Crest Academy. We host a yearly event designed to inspire, impact, and engage the community. This year, our theme is Harmony. It focuses on bringing peace to disruption, order to chaos, and cohesiveness to the disarray of the current world.</h2>
+        </nav>
+        <button id="register-button"> <a href="register.html">Register</a></button>
+        <div class="hero-content">
+            <img src="assests/hero-art.png" alt="">
+            <div class="overlay-title">
+                <h1>Harmony</h1>
+                <h3>CCA UNITE 2022:</h2>
+            </div>
         </div>
-    </header>
+    </div>  
+
+    <main>
+        <section class="club-goal">
+            <img id="hr" src="assests/hr-line.png">
+            <h2>Our goal is to feature speakers from all walks of life who strive to bring peace to disruption, order to chaos, and cohesiveness to tde disarray of tde current world.</h2>
+            <img id="blurryPic" src="assests/blurry-bg.png">
+            <img id="hr" src="assests/hr-line.png">
+        </section>
+
+        <section class="about" id="about">
+            <h4>Created by a team of high schoolers with a vision to impact their community, CCA UNITE seeks to inspire and impact the next generation as the world around us continues to change dynamically. Enjoy captivating and engaging talks by some of today's leaders, performances by talented young people, and activities designed to foster connections for a day to remember.
+            </h4>
+        </section>
+
+        <section class="event" id="event">
+            <h2>Join Us for a Day of Innovation, Discovery, and Inspiration.</h2>
+            <div class="event-details">
+                <table>
+                    <tr>
+                        <td id="ques">What?</td>
+                        <td id="facts">CCA UNITE Speak Event: Harmony</td>
+                    </tr>
+                    <tr>
+                        <td id="ques">When?</td>
+                        <td id="facts">Friday, May 13th 2022 
+                            <br> 
+                            3:15 PM - 5:00 PM
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="ques">Where?</td>
+                        <td id="facts">
+                            <p>Canyon Crest Academy</p>
+                            <p id="f2">5951 Village Center Loop Rd, San Diego, CA 92130</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="ques">How?</td>
+                        <td id="facts">Hybrid</td>
+                    </tr>
+                  </table>
+            </div>
+        </section>
+
+        <section class="featuredSpeakers">
+            <h2>Featured Speakers</h2>
+            <div class="speakerCard">
+                <div class="speaker-profile-pic">
+                    <img src="assests/janelle-pfp.jpeg" alt="">
+                    <h3 id="speaker-name1">Janelle Lynnae</h3>
+                </div>
+                <div class="speaker-bio">
+                    <h3 id="speaker-name2">Janelle Lynnae</h3>
+                    <p>She is a Confidence Coach, national speaker, thought leader and corporate workshop facilitator that teaches women how to shift negative thoughts patterns into empowered, confident ways of thinking & being.</p>
+                    <p>Her mission is to help every woman step into her power and see herself as the valuable badass she is to this world. Janelle primarily works with women in male dominated industries, such as Cisco, Pinterest, and Women in Product, giving concrete tools to building women's confidence muscle in order to make more money and have more intentional relationships.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
 
     <footer>
-        <div class="footerCont">
-            <div class="footer-strip">
-                <h5>About</h5>
-                <a href="https://ccaunite.wixsite.com/ccaunite">our team</a> <br>
-                <a href="https://ccaunite.wixsite.com/ccaunite/our-story">our story</a>
-            </div>
-            <div class="footer-strip">
-                <h5>Past Events</h5>
-                <a href="https://ccaunite.wixsite.com/ccaunite">2021 - Revival</a> <br>
-                <a href="https://ccaunite.wixsite.com/ccaunite">2020 - Rise</a>
-            </div>
-            <div class="footer-strip">
-                <h5>Contact Us</h5>
-                <a href="mailto:ccauniteoutreach@gmail.com">info@ccaunite.com</a>
-            </div>
+        <div class="footerLinks">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#event">2022 Events</a>
+            <a href="archive.html">Past Events</a>
         </div>
-        <div class="copyright">
-            <h4>Copyright Ⓒ 2022 CCA UNITE</h4> <br>
-            <h4>Website coded by Katy Tseng</h4> <br>
+        <div id="vr-line1">
+            <img src="assests/vr-line.png" >
+        </div>
+        <div class="footerEvent">
+            <p>UNITE 2022: Harmony</p>
+            <p>May 13th, 3:15 PM - 5:00 PM</p>
+            <button id="footer-register-button"> <a href="register.html">Register</a></button>
+        </div>
+        <div id="vr-line2">
+            <img src="assests/vr-line.png">
+        </div>
+        <div class="footerContact">
+            <p>Contact Us</p>
+            <a href="mailto:ccauniteofficial@gmail.com">ccauniteofficial@gmail.com</a>
+            <a href="https://www.instagram.com/ccaunite/">insta:@ccaunite</a>
         </div>
     </footer>
-    
 </body>
 </html>
