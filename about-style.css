@@ -1,0 +1,361 @@
+body {
+  background: #EFEDE4;
+}
+
+nav {
+  margin: 0;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: #1A1D59;
+  display: flex !important;
+  padding: 30px 40px 20px 40px;
+  width: 100%;
+}
+
+.nav-links-left {
+  width: 50%;
+  display: flex;
+}
+
+.nav-links-right {
+  width: 30%;
+  display: flex;
+  justify-content: right;
+}
+
+nav a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 5px 0 5px 40px;
+}
+
+nav a:hover {
+  color: #fff5a0;
+}
+
+#nav-hamburger {
+  display: none;
+}
+
+#register-button {
+  position: fixed;
+  background-color: #ffffff;
+  color: #0D0A29;
+  border-radius: 50px;
+  border: 5 5 5 5;
+  height: 50px;
+  width: 120px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  z-index: 100000;
+  top: 25px;
+  right: 60px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.hero {
+  height: 100vh;
+  background-color: #1A1D59;
+  padding-top: 0;
+}
+
+.hero-content {
+  display: flex;
+  height: 100%;
+  padding: 50px 10% 0 10%;
+}
+
+.hero-content .story {
+  width: 50%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.story-title {
+  display: flex;
+}
+
+.story-title h1 {
+  width: 330px;
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 100px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FEFFE5;
+}
+
+.story-title .imgE {
+  padding-top: 270px;
+}
+
+.story-title #ellipse2 {
+  height: 40px;
+}
+
+.story p {
+  width: 85%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: white;
+}
+
+.canva {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 50px 30px 60px;
+}
+
+.canva img {
+  position: absolute;
+}
+
+#ellipse4 {
+  z-index: 3;
+  width: 296px;
+  height: 305px;
+  margin: 0px 0 0 80px;
+}
+
+#unite {
+  z-index: 7;
+  width: 275px;
+  height: 275px;
+  margin: 40px 0 0 200px;
+}
+
+#revival {
+  z-index: 6;
+  position: absolute;
+  width: 323px;
+  height: 324px;
+  margin: 110px 0 0 0px;
+}
+
+#rise {
+  z-index: 4;
+  width: 257px;
+  height: 257px;
+  margin: 280px 0 0 280px;
+}
+
+#harmony-standard {
+  z-index: 5;
+  width: 307px;
+  height: 308px;
+  margin: 300px 0 0 30px;
+}
+
+#ellipse3 {
+  margin: 430px 0 0 -30px;
+}
+
+#ellipse6 {
+  z-index: 8;
+  margin: 200px 0 0 400px;
+}
+
+#ellipse5 {
+  z-index: 7;
+  margin: 225px 0 0 400px;
+  mix-blend-mode: exclusion;
+}
+
+main {
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+  color: #141867;
+}
+
+#hr-line1 {
+  height: 5px;
+  width: 100%;
+}
+
+main h2 {
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: -0.005em;
+}
+
+.teamContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.committee {
+  background: white;
+  padding: 0 30px 0 30px;
+  width: 280px;
+}
+
+.divider {
+  width: 30px;
+}
+
+.committee h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.005em;
+  margin: 40px 0 10px 0;
+}
+
+.committee img {
+  height: 2px;
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+
+.committee h4 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 0px;
+  letter-spacing: -0.005em;
+}
+
+#card {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: -0.005em;
+  height: 25px;
+  width: 135px;
+  border-width: 2px;
+  border-color: #ADA99B;
+  background-color: #EEEDE9;
+  color: #ADA99B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------ MOBILE ------- */
+@media screen and (max-width: 767px) {
+  .ellipse {
+    display: none !important;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 80px 30px 0 30px;
+    margin-bottom: -200px;
+  }
+
+  .story-title {
+    height: 150px;
+  }
+  
+  .story-title h1 {
+    margin: 0 0 0 0;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 60px;
+  }
+  
+  .story p {
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: -0.005em;
+  }
+
+  .canva {
+    width: 100%;
+    padding: 30px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #unite, #revival, #rise, #harmony-standard {
+    all: unset;
+    width: 75px;
+    height: 75px;
+  }
+
+  main {
+    margin: 10px 5px 10px 5px;
+  }
+
+  .teamContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .committee {
+    height: 160px;
+    width: 100%;
+    padding: 20px 0px 10px 20px;
+  }
+
+  #hr1 {
+    height: 1px;
+    width: 95%;
+  }
+
+  .committee h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.005em;
+    text-align: left;
+  }
+
+  .ppl {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .committee #hr2 {
+    height: 90px;
+    width: 0.5px;
+    margin: 0px 10px 20px 0;
+  }
+
+  .divider {
+    width: 90vw;
+    height: 30px;
+  }
+
+  .ppl h4 {
+    font-size: 18px;
+    margin: 5px;
+    line-height: 18px;
+  }
+
+  .column1, .column2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column1 {
+    width: 100px;
+  }
+
+  #card {
+    font-size: 8px;
+    width: 80px;
+    height: 20px;
+    margin: 5px 0 0 5px;
+  }
+
+}
