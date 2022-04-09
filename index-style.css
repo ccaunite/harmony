@@ -23,7 +23,7 @@ nav {
   margin: 0;
   position: fixed;
   z-index: 1000;
-  width: 100%;
+  width: 85%;
   background-color: #0D0A29;
   display: flex;
   padding: 40px 40px 30px 40px;
@@ -48,10 +48,14 @@ nav a {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   color: white;
-  font-size: 1.2em;
+  font-size: 20px;
   text-decoration: none;
   cursor: pointer;
   padding: 5px 20px 5px 20px;
+}
+
+nav a:hover {
+  color: #fff5a0;
 }
 
 #nav-hamburger {
@@ -66,11 +70,12 @@ nav a {
   border: 5 5 5 5;
   height: 50px;
   width: 120px;
+  font-size: 20px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
   z-index: 100000;
-  top: 40px;
+  top: 35px;
   right: 60px;
 }
 
@@ -140,24 +145,29 @@ main {
 }
 
 .club-goal {
+  display: none;
   width: 50%;
 }
 
 .club-goal h2 {
-  font-size: 2.5em;
   position: absolute;
+  transform: translateY(-100%);
   width: 40%;
-  line-height: 34.63px;
+  font-size: 54px;
+  line-height: 65px;
 }
 
 #blurryPic {
   width: 400px;
-  padding: 200px 0 20px 350px;
+  margin: 80px 0 0 0;
+  padding: 180px 0 20px 250px;
+  mix-blend-mode: difference;
 }
 
 #hr2 {
   height: 8px;
   width: 60%;
+  margin-top: 60px;
   margin-bottom: 50px;
 }
 
@@ -187,8 +197,8 @@ button, i {
 #unite-logo {
   position: absolute;
   width: 35vw;
-  left: 60%;
-  padding-top: 280px;
+  left: 61%;
+  padding-top: 390px;
   z-index: 99;
 }
 
@@ -196,7 +206,7 @@ button, i {
   position: absolute;
   width: 35vw;
   left: 59%;
-  padding-top: 488px;
+  padding-top: 608px;
   z-index: 90;
 }
 
@@ -227,6 +237,15 @@ table {
   width: 90%;
   display: block;
   margin: auto;
+  display: flex;
+}
+
+.signUp-card {
+  width: 20%;
+}
+
+.signUp-card img {
+  width: 100%;
 }
 
 /* table things */
@@ -271,7 +290,6 @@ td {
 
 .speakerCard {
   background: #F3F3F0;
-  ;
   display: flex;
   color: #3E4474;
   height: 350px;
@@ -319,70 +337,15 @@ td {
   margin-bottom: 10px;
 }
 
+#socials1 a:hover, #socials2 a:hover {
+  color: #797baf;
+}
+
 #socials2 a{
   font-size: 30px;
 }
 
-footer {
-  background-color: #DCDAD3;
-  padding: 50px 0 50px 80px;
-  width: 100vw;
-}
 
-footer .directory {
-  display: flex;
-  flex-direction: row;
-}
-
-.copyright {
-  text-align: center;
-  margin: 40px 0 10px 0;
-}
-
-.copyright p {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-}
-
-footer #label {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  line-height: 30px;
-  font-size: 20px;
-}
-
-.footerLinks {
-  display: flex;
-  flex-direction: column;
-  margin: 0 5px 0 0;
-}
-
-#vr-line1, #vr-line2 {
-  padding: 0 50px 0 50px;
-}
-
-.footerContact {
-  display: flex;
-  flex-direction: column;
-}
-
-.footerContact a {
-  font-family: 'Poppins', sans-serif;
-}
-
-#footer-register-button {
-  background-color: #ffffff;
-  margin: 20px 0 0 ;
-  color: #0D0A29;
-  height: 40px;
-  width: 100px;
-  border-radius: 50px;
-  border: 5 5 5 5;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  text-align: center;
-}
 
 /* ------ MOBILE ------- */
 @media screen and (max-width: 767px) {
@@ -602,46 +565,7 @@ footer #label {
     padding: 0;
   }
 
-  footer {
-    font-family: 'Poppins', sans-serif;
-    font-size: 10px;
-    width: 100%;
-    padding: 10px;
-  }
-
-  footer #label {
-    font-weight: 700;
-    letter-spacing: unset;
-  }
-
-  .footerContact {
-    padding: 0 0 0 5px;
-  }
-
-  .footerLinks {
-    display: none;
-    width: 0%;
-  }
-
-  #vr-line1 {display: none;}
-
-  .footerEvent {width: 40%;}
-
-  .footerContact {
-    width: 50%;
-    font-size: 12px;
-  }
-
-  #footer-register-button {
-    position: unset !important;
-  }
-
-  #vr-line2 {
-    height: 100%;
-    margin: 0;
-    padding: 0 5px 0 5px;
-  }
-
+  
 }
 
 
