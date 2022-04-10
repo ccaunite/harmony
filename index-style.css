@@ -213,7 +213,6 @@ button, i {
 .event {
   padding: 50px 80px 100px 80px;
   background-color: #1A1F4D;
-  ;
   color: white;
 }
 
@@ -279,6 +278,10 @@ td {
 
 .featuredSpeakers {
   padding: 20px 0 50px 0;
+}
+
+.divider {
+  height: 50px;
 }
 
 .featuredSpeakers h2 {
