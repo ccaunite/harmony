@@ -79,6 +79,11 @@ button:hover {
   cursor: pointer;
 }
 
+button, i {
+  all: unset;
+  width: fit-content;
+}
+
 nav {
   margin: 0;
   position: fixed;
@@ -86,7 +91,7 @@ nav {
   width: 100%;
   background-color: #0D0A29;
   display: flex;
-  padding: 40px 40px 30px 40px;
+  padding: 40px 0px 10px 40px;
 }
 
 .nav-links {
@@ -101,34 +106,50 @@ nav {
 
 .nav-links-right {
   justify-content: right;
-  padding-right: 30px;
+  padding-right: 250px;
 }
 
 nav a {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   color: white;
-  font-size: 1.2em;
+  font-size: 20px;
   text-decoration: none;
   cursor: pointer;
   padding: 5px 20px 5px 20px;
+}
+
+nav a:hover {
+  color: #fff5a0;
 }
 
 #nav-hamburger {
   display: none;
 }
 
+#hamburger-container {
+  padding: 0px 0 0 10px;
+  
+}
+
+#hamburger-container button {
+  z-index: 100000000;
+}
+
 #register-button {
   position: fixed;
   background-color: #ffffff;
+  color: #0D0A29;
   border-radius: 50px;
-  height: 50px;
-  width: 120px;
+  border: 5 5 5 5;
+  height: 45px;
+  width: 130px;
+  font-size: 20px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
   z-index: 100000;
-  top: 40px;
+  top: 35px;
   right: 60px;
 }
 
@@ -195,14 +216,75 @@ footer #label {
   height: 40px;
   width: 100px;
   border-radius: 50px;
-  border: 5 5 5 5;
+  border: 0;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   text-align: center;
 }
 
+.credits {
+  text-align: center;
+  font-size: 10px;
+}
+
 /* ------ MOBILE ------- */
 @media screen and (max-width: 767px) {
+  #register-button {
+    top: 20px;
+    right: 20px;
+  }
+
+  #hamburger-container {
+    width: 100%;
+    padding: 15px 0 0 20px;
+  }
+
+  
+  #nav-hamburger {
+    z-index: 10000;
+    display: block;
+    color: white;
+    font-size: 50px;
+  }
+
+  .nav-links-left {
+    display: none;
+    width: 0%;
+  }
+
+  nav {
+    z-index: 99;
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.937);
+    width: 100vw;
+    height: 100vh;
+    padding: 0 0 0 0;
+  }
+
+  .nav-links {
+    width: 100%;
+    padding-top: 100px;
+  }
+
+  .nav-links-right {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding-right: 0;
+    padding-top: 150px;
+  }
+
+  .nav-links-right a {
+    font-size: 2em;
+    line-height: 80px;
+    color: black;
+  }
+
+  .add-bg {
+    background-color: rgba(255, 255, 255, 0.937);
+  }
+  
   footer {
     font-family: 'Poppins', sans-serif;
     font-size: 10px;
@@ -213,6 +295,9 @@ footer #label {
   footer #label {
     font-weight: 700;
     letter-spacing: unset;
+    font-size: 18px;
+    line-height: 18px;
+    margin: 5px 0 10px 0;
   }
 
   .footerContact { padding: 0 0 0 5px; }
@@ -231,12 +316,22 @@ footer #label {
     font-size: 12px;
   }
 
-  #footer-register-button { position: unset !important; }
+  #footer-register-button { 
+    margin-top: 10px;
+    height: 30px;
+    width: 80px;
+    position: unset !important; 
+  }
 
   #vr-line2 {
     height: 100%;
     margin: 0;
     padding: 0 5px 0 5px;
+  }
+
+  .credits {
+    text-align: center;
+
   }
 
 }
