@@ -8,25 +8,27 @@
     <link rel="stylesheet" href="about-style.css">
     <link rel="icon" type="image/x-icon" href="/assests/favicon.png">
     <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <script type="text/javascript" src="code.js"></script>
     <title>CCA UNITE - OUR STORY</title>
 </head>
 <body>
-    <!--
-    <div id="hamburger-container">
-        <button id="nav-hamburger" onclick="navDisplay()"><i class="ai-three-line-horizontal"></i></button>
-    </div>
     <nav id="nav">
         <div class="nav-links-left">
             <a href="index.html" class="home">CCA UNITE</a>
         </div>
         <div class="nav-links-right">
-            <a href="about.html">About</a>
-            <a href="index.html#event">2022 Event</a>
-            <a href="https://ccaunite.wixsite.com/ccaunite">Past Events</a>
+            <a onclick="navDisplay()" href="about.html">About</a>
+            <a onclick="navDisplay()" href="index.html#event">2022 Event</a>
+            <a onclick="navDisplay()" href="https://ccaunite.wixsite.com/ccaunite" target="blank">Past Events</a>
         </div>
     </nav>
-    <button id="register-button"> <a href="https://forms.gle/g4BoZjW6V375NHmS9">Register</a></button>
-    -->
+    <div class="navButtons">
+        <div id="hamburger-container">
+            <button id="nav-hamburger" onclick="navDisplay()"><i class="ai-three-line-horizontal"></i></button>
+        </div>
+        <button id="register-button"> <a href="https://forms.gle/g4BoZjW6V375NHmS9">Register</a></button>
+    </div>
+    
     <div class="hero">
         <div class="hero-content">
             <div class="story">
@@ -62,16 +64,16 @@
                 <img id="hr1" src="assests/hr-line.png">
                 <div class="ppl">
                     <div class="column1">
-                        <h4>Aysu<br>Saglam</h4>
+                        <h4>Aysu Saglam</h4>
                     <div id="card">
                         <p>Logistics Executive</p>
                     </div>
                     </div>
                     <img id="hr2" src="assests/hr-line.png">
                     <div class="column2">
-                        <h4>Name</h4>
-                        <h4>Name</h4>
-                        <h4>Name</h4>
+                        <h5>Name</h5>
+                        <h5>Name</h5>
+                        <h5>Name</h5>
                     </div>
                 </div>
             </div>
@@ -81,16 +83,16 @@
                 <img id="hr1" src="assests/hr-line.png">
                 <div class="ppl">
                     <div class="column1">
-                        <h4>Bettina<br>Zhang</h4>
+                        <h4>Bettina Zhang</h4>
                     <div id="card">
                         <p>Speakers Executive</p>
                     </div>
                     </div>
                     <img id="hr2" src="assests/hr-line.png">
                     <div class="column2">
-                        <h4>Name</h4>
-                        <h4>Name</h4>
-                        <h4>Name</h4>
+                        <h5>Name</h5>
+                        <h5>Name</h5>
+                        <h5>Name</h5>
                     </div>
                 </div>
             </div>
@@ -100,16 +102,16 @@
                 <img id="hr1" src="assests/hr-line.png">
                 <div class="ppl">
                     <div class="column1">
-                        <h4>Amanda<br>Chen</h4>
+                        <h4>Amanda Chen</h4>
                     <div id="card">
                         <p>Sponsors Executive</p>
                     </div>
                     </div>
                     <img id="hr2" src="assests/hr-line.png">
                     <div class="column2">
-                        <h4>Eecho</h4>
-                        <h4>Name</h4>
-                        <h4>Name</h4>
+                        <h5>Name</h5>
+                        <h5>Name</h5>
+                        <h5>Name</h5>
                     </div>
                 </div>
             </div>
@@ -119,16 +121,16 @@
                 <img id="hr1" src="assests/hr-line.png">
                 <div class="ppl">
                     <div class="column1">
-                        <h4>Karina<br>Parikh</h4>
+                        <h4>Karina Parikh</h4>
                     <div id="card">
                         <p>Outreach Executive</p>
                     </div>
                     </div>
                     <img id="hr2" src="assests/hr-line.png">
                     <div class="column2">
-                        <h4>Emily</h4>
-                        <h4>Katy Tseng</h4>
-                        <h4>Tara Rezaei</h4>
+                        <h5>Name</h5>
+                        <h5>Name</h5>
+                        <h5>Name</h5>
                     </div>
                 </div>
             </div>
@@ -143,7 +145,7 @@
                 <a id="label" href="https://www.ccaunite.com/">Home</a>
                 <a id="label" href="">About</a>
                 <a id="label" href="#event">2022 Events</a>
-                <a id="label" href="https://ccaunite.wixsite.com/ccaunite">Past Events</a>
+                <a id="label" href="https://ccaunite.wixsite.com/ccaunite" target="blank">Past Events</a>
             </div>
             <div id="vr-line1">
                 <img src="assests/vr-line.png" >
@@ -164,6 +166,9 @@
         </div>
         <div class="copyright">
             <p>© 2023 by CCA UNITE</p>
+        </div>
+        <div class="credits">
+            <p>・ Designed by Eecho Yuan ・ Coded by Katy Tseng ・</p>
         </div>
     </footer>
 </body>
