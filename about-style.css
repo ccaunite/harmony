@@ -2,65 +2,12 @@ body {
   background: #EFEDE4;
 }
 
-nav {
-  margin: 0;
-  position: fixed;
-  z-index: 1000;
-  width: 100%;
-  background-color: #1A1D59;
-  display: flex !important;
-  padding: 30px 40px 20px 40px;
-  width: 100%;
-}
-
-.nav-links-left {
-  width: 50%;
-  display: flex;
-}
-
-.nav-links-right {
-  width: 30%;
-  display: flex;
-  justify-content: right;
-}
-
-nav a {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-  cursor: pointer;
-  padding: 5px 0 5px 40px;
-}
-
-nav a:hover {
-  color: #fff5a0;
-}
-
-#nav-hamburger {
-  display: none;
-}
-
-#register-button {
-  position: fixed;
-  background-color: #ffffff;
-  color: #0D0A29;
-  border-radius: 50px;
-  border: 5 5 5 5;
-  height: 50px;
-  width: 120px;
-  font-size: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 800;
-  text-align: center;
-  z-index: 100000;
-  top: 25px;
-  right: 60px;
-}
-
 button:hover {
   cursor: pointer;
+}
+
+nav {
+  background-color: #1A1D59;
 }
 
 .hero {
@@ -197,8 +144,8 @@ main h2 {
 
 .committee {
   background: white;
-  padding: 0 30px 0 30px;
-  width: 280px;
+  padding: 0 30px 30px 30px;
+  width: 30%;
 }
 
 .divider {
@@ -222,11 +169,22 @@ main h2 {
 .committee h4 {
   font-size: 26px;
   font-weight: 600;
-  line-height: 0px;
+  line-height: 26px;
   letter-spacing: -0.005em;
+  margin: 0;
+
+}
+
+.committee h5 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: -0.005em;
+  margin: 10px 0 10px 0;
 }
 
 #card {
+  margin-top: 15px;
   font-size: 13px;
   font-weight: 400;
   line-height: 13px;
@@ -246,6 +204,10 @@ main h2 {
 @media screen and (max-width: 767px) {
   .ellipse {
     display: none !important;
+  }
+
+  .navButtons {
+    background-color: #1A1D59;
   }
   
   .hero-content {
@@ -292,7 +254,18 @@ main h2 {
   }
 
   main {
-    margin: 10px 5px 10px 5px;
+    margin: 0;
+    padding: 20px 20px 20px 20px;
+    width: 100vw;
+  }
+
+  main h2 {
+    margin: 20px 0 10px 0;
+    font-size: 36px;
+  }
+
+  #hr-line1 {
+    width: 90%;
   }
 
   .teamContainer {
@@ -302,7 +275,7 @@ main h2 {
 
   .committee {
     height: 160px;
-    width: 100%;
+    width: 85vw;
     padding: 20px 0px 10px 20px;
   }
 
@@ -340,6 +313,12 @@ main h2 {
     font-size: 18px;
     margin: 5px;
     line-height: 18px;
+    white-space: pre-line;
+  }
+
+  .ppl h5 {
+    font-size: 18px;
+    margin: 0px;
   }
 
   .column1, .column2 {
@@ -354,7 +333,7 @@ main h2 {
   #card {
     font-size: 8px;
     width: 80px;
-    height: 20px;
+    height: 15px;
     margin: 5px 0 0 5px;
   }
 
