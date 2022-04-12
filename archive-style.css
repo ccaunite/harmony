@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;800&family=Work+Sans:wght@200;400;500&display=swap');
+
+body {
+  background-color: #111a51 !important;
+}
+
+.hero {
+  height: 30vh;
+  padding: 100px 0 40px 50px;
+  color: white;
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 800 !important;
+}
+
+main {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.timeline {
+  width: 10vw;
+}
+
+.timeline h2 {
+  transform: rotate(-90deg)!important;
+
+}
+
+.accordion {
+  width: 90vw;
+}
+
