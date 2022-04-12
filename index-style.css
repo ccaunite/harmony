@@ -19,70 +19,6 @@ body {
   width: 100%;
 }
 
-nav {
-  margin: 0;
-  position: fixed;
-  z-index: 1000;
-  width: 85%;
-  background-color: #0D0A29;
-  display: flex;
-  padding: 40px 40px 30px 40px;
-}
-
-.nav-links {
-  display: flex;
-  width: 85%;
-}
-
-.nav-links-left, .nav-links-right {
-  width: 50%;
-  display: flex;
-}
-
-.nav-links-right {
-  justify-content: right;
-  padding-right: 30px;
-}
-
-nav a {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-  cursor: pointer;
-  padding: 5px 20px 5px 20px;
-}
-
-nav a:hover {
-  color: #fff5a0;
-}
-
-#nav-hamburger {
-  display: none;
-}
-
-#register-button {
-  position: fixed;
-  background-color: #ffffff;
-  color: #0D0A29;
-  border-radius: 50px;
-  border: 5 5 5 5;
-  height: 50px;
-  width: 120px;
-  font-size: 20px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 800;
-  text-align: center;
-  z-index: 100000;
-  top: 35px;
-  right: 60px;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
 .hero-content {
   height: 80%;
   padding: 130px 0 0 20px;
@@ -172,26 +108,15 @@ main {
 }
 
 .overlay-title h1 {
-  font-size: 10em;
-  margin: 10px 0 0 0;
-  padding: 0;
+  font-size: 190px;
+  line-height: 190px;
   color: #FEFFE5;
 }
 
 .overlay-title h3 {
-  font-size: 4em;
+  font-size: 60px;
   margin: 0;
   padding: 0;
-}
-
-button, i {
-  all: unset;
-  width: fit-content;
-}
-
-#hamburger-container {
-  padding: 0px 0 0 10px;
-  
 }
 
 #unite-logo {
@@ -352,89 +277,31 @@ td {
 
 /* ------ MOBILE ------- */
 @media screen and (max-width: 767px) {
-  #footer-register-button {
-    height: 25px;
-    width: 80px;
-    margin: 10px 0 0 0;
-  }
-
-  #register-button {
-    top: 20px;
-    right: 20px;
-  }
-
   svg {
     display: none;
   }
 
-  #hamburger-container {
-    width: 100%;
-    padding: 15px 0 0 20px;
-  }
-  
-  #nav-hamburger {
-    z-index: 10000;
-    display: block;
-    color: white;
-    font-size: 50px;
-  }
-
-  .nav-links-left {
-    display: none;
-    width: 0%;
-  }
-
-  nav {
-    z-index: 99;
-    display: none;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.937);
-    width: 100vw;
-    height: 80vh;
-    padding: 0 0 0 0;
-  }
-
-  .nav-links {
-    width: 100%;
-    padding-top: 100px;
-  }
-
-  .nav-links-right {
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    padding-right: 0;
-  }
-
-  .nav-links-right a {
-    font-size: 2em;
-    line-height: 80px;
-    color: black;
-  }
-
-  .add-bg {
-    background-color: rgba(255, 255, 255, 0.937);
+  .navButtons {
+    background-color: #0D0A29;
   }
 
   .hero-content {
-    width: 80%;
-    margin-top: 0;
     padding: 0;
   }
 
   .hero-content img {
-    max-width: 80%;
+    width: 250px;
     padding: 0;
     object-fit: contain;
   }
 
   .overlay-title h1 {
-    font-size: 3.8em;
+    font-size: 64px;
     padding: 80px 0 0 0;
   }
   
   .overlay-title h3 {
-    font-size: 1.5em;
+    font-size: 24px;
     margin: 0;
     padding: 0;
   }
@@ -502,6 +369,10 @@ td {
     border-spacing: 8px;
   }
 
+  .signUp-card {
+    display: none;
+  }
+
   .featuredSpeakers {
     order: 5;
     padding-bottom: 0;
@@ -509,7 +380,7 @@ td {
 
   .featuredSpeakers h2{
     font-size: 30px;
-    margin: 0;
+    margin: 0 0 0 10px;
   }
 
   .speakerCard {
