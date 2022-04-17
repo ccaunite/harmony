@@ -4,30 +4,61 @@ body {
   background-color: #111a51 !important;
 }
 
+nav {
+  background-color: #111a51;
+}
+
 .hero {
   height: 30vh;
-  padding: 100px 0 40px 50px;
+  padding: 150px 0 0px 50px;
+}
+
+.hero h1 {
   color: white;
   font-family: 'Poppins', sans-serif !important;
   font-weight: 800 !important;
+  text-transform: uppercase;
+  font-size: 120px;
+  letter-spacing: 20px;
+  text-align: center;
 }
+
 
 main {
   display: flex !important;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
+  margin: 50px;
 }
 
-.timeline {
-  width: 10vw;
-}
-
-.timeline h2 {
-  transform: rotate(-90deg)!important;
-
-}
-
-.accordion {
+.override .accordion {
   width: 90vw;
+}
+
+.override .card {
+  border-width: 5px;
+}
+
+.override .card-body {
+  background-image: url("assests/beige-paper.png");
+  display: flex;
+  flex-direction: row;
+}
+
+.override .card-body .logo img {
+  width: 250px;
+}
+
+.override .card-body .context {
+  width: 60%;
+  padding: 0 20px 0 20px;
+}
+
+.override .card h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
