@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="archive-style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -11,14 +12,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <title>CCA UNITE - PAST EVENTS</title>
 </head>
-<body>
-    <div class="hero">
+<body class="override">
+  <div class="blur"></div>
+    <nav id="nav">
+        <div class="nav-links-left">
+            <a href="index.html" class="home">CCA UNITE</a>
+        </div>
+        <div class="nav-links-right">
+            <a href="about.html">About</a>
+            <a href="#event">2022 Event</a>
+            <a href="archive.html">Past Events</a>
+        </div>
+    </nav>
+    <div class="navButtons">
+        <div id="hamburger-container">
+            <button id="nav-hamburger" onclick="navDisplay()"><i class="ai-three-line-horizontal"></i></button>
+        </div>
+        <button id="register-button"> <a href="https://forms.gle/g4BoZjW6V375NHmS9">Register</a></button>
+    </div>  
+  
+  <div class="hero">
         <h1>Archive</h1>
     </div>
-    <main>
-        <div class="timeline">
-            <h2>TIMELINE</h2>
-        </div>
+    <main >
         <div class="accordion" id="accordionExample">
             <div class="card">
               <div class="card-header" id="headingOne">
@@ -30,7 +46,15 @@
               </div>
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <div class="logo">
+                    <img src="assests/revival-logo.png">
+                  </div>
+                  <div class="context">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, unde totam in, distinctio tempora animi perferendis consequatur cupiditate ipsa odit repudiandae odio, quis sed quidem. Fugit, accusamus? Consequuntur, eveniet officiis.
+                  </div>
+                  <div class="gallery">
+
+                  </div>
                 </div>
               </div>
             </div>
@@ -44,7 +68,15 @@
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <div class="logo">
+                    <img src="assests/rise-logo.png">
+                  </div>
+                  <div class="context">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, unde totam in, distinctio tempora animi perferendis consequatur cupiditate ipsa odit repudiandae odio, quis sed quidem. Fugit, accusamus? Consequuntur, eveniet officiis.
+                  </div>
+                  <div class="gallery">
+                    
+                  </div>
                 </div>
               </div>
             </div>
