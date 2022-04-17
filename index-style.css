@@ -81,23 +81,23 @@ main {
 }
 
 .club-goal {
-  display: none;
   width: 50%;
+  position: relative;
+  height: 700px;
 }
 
 .club-goal h2 {
   position: absolute;
-  transform: translateY(-100%);
-  width: 40%;
+  width: 80%;
   font-size: 54px;
   line-height: 65px;
 }
 
 #blurryPic {
+  position: absolute;
   width: 400px;
   margin: 80px 0 0 0;
   padding: 180px 0 20px 250px;
-  mix-blend-mode: difference;
 }
 
 #hr2 {
@@ -165,6 +165,7 @@ table {
 }
 
 .signUp-card {
+  display: none;
   width: 20%;
 }
 
