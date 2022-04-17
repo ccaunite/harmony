@@ -68,55 +68,104 @@ nav {
   position: absolute;
 }
 
+@keyframes logo-transition {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes ellipse-transition {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 #ellipse4 {
   z-index: 3;
   width: 296px;
   height: 305px;
   margin: 0px 0 0 80px;
+  
 }
 
 #unite {
+  opacity: 0;
   z-index: 7;
   width: 275px;
   height: 275px;
   margin: 40px 0 0 200px;
+  animation: logo-transition;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards; 
 }
 
 #revival {
+  opacity: 0;
   z-index: 6;
-  position: absolute;
   width: 323px;
   height: 324px;
   margin: 110px 0 0 0px;
+  animation: logo-transition;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards; 
 }
 
 #rise {
+  opacity: 0;
   z-index: 4;
   width: 257px;
   height: 257px;
   margin: 280px 0 0 280px;
+  animation: logo-transition;
+  animation-duration: 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards; 
 }
 
 #harmony-standard {
+  opacity: 0;
   z-index: 5;
   width: 307px;
   height: 308px;
   margin: 300px 0 0 30px;
+  animation: logo-transition;
+  animation-duration: 1s;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards; 
 }
 
 #ellipse3 {
   margin: 430px 0 0 -30px;
+  opacity: 0;
+  animation: ellipse-transition;
+  animation-delay: 0.5s;
+  animation-duration: 6s;
+  animation-fill-mode: forwards; 
 }
 
 #ellipse6 {
   z-index: 8;
   margin: 200px 0 0 400px;
+  opacity: 0;
+  animation: ellipse-transition;
+  animation-delay: 0.5s;
+  animation-duration: 6s;
+  animation-fill-mode: forwards; 
 }
 
 #ellipse5 {
   z-index: 7;
   margin: 225px 0 0 400px;
   mix-blend-mode: exclusion;
+  opacity: 0;
+  animation: ellipse-transition;
+  animation-delay: 0.5s;
+  animation-duration: 6s;
+  animation-fill-mode: forwards; 
 }
 
 main {
