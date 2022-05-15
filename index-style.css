@@ -123,7 +123,7 @@ main {
   position: absolute;
   width: 35vw;
   left: 61%;
-  padding-top: 390px;
+  padding-top: 550px;
   z-index: 99;
 }
 
@@ -131,7 +131,8 @@ main {
   position: absolute;
   width: 35vw;
   left: 59%;
-  padding-top: 608px;
+  padding-top: 766px;
+  translate: rotateX(-30);
   z-index: 90;
 }
 
@@ -202,8 +203,28 @@ td {
   z-index: 80;
 }
 
+.speakerVideos {
+  padding: 20px 0 0 0;
+}
+
+.videoPanel {
+  padding: 50px 40px 50px 40px;
+  background-color: #1A1F4D;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoCont {
+  margin: 0 5px 0 5px;
+}
+
+
+
+
 .featuredSpeakers {
-  padding: 20px 0 50px 0;
+  padding: 10px 0 50px 0;
 }
 
 .divider {
@@ -372,6 +393,10 @@ td {
 
   .signUp-card {
     display: none;
+  }
+
+  .videoPanel {
+    flex-flow: column;
   }
 
   .featuredSpeakers {
